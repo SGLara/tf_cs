@@ -11,6 +11,19 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Algolia plugin -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    algoliasearchNetlify({
+      appId: 'K3W4H0TPSZ',
+      apiKey: '<YOUR_ALGOLIA_SEARCH_API_KEY>',
+      siteId: '4afdba12-bd31-4e6b-aac9-09e0236a959a',
+      branch: 'master',
+      selector: 'div#search',
+    });
+  </script>
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
